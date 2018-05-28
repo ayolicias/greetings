@@ -1,5 +1,5 @@
 describe('Greetings', function(){
-  describe('greet users in different language', function(){
+  describe('Greet users in different language', function(){
       it ('check if user is  greeted in English', function(){
         var text = Greet();
         text.greetkey('English','ziya');
@@ -19,7 +19,7 @@ describe('Greetings', function(){
 
   describe('Stored Names', function(){
     it ('returns stored names', function(){
-      var text2 =Greet();
+      var text2 = Greet();
       text2.calculate('English', 'lihle');
       text2.calculate('English', 'siya');
       text2.calculate('English', 'yola');
@@ -30,7 +30,7 @@ describe('Greetings', function(){
 
   describe('count users', function(){
   it ('counts how many names are stored ', function(){
-    var text3 =Greet();
+    var text3 = Greet();
     text3.calculate('English', 'lihle');
     text3.calculate('English', 'siya');
     text3.calculate('English', 'yola');
@@ -38,5 +38,15 @@ describe('Greetings', function(){
     assert.deepEqual(text3.count(),4);
   });
   });
+  describe ('Greeting object', function(){
 
+  it("should return users stored in localStorage", function(){
+    var greet = Greet({"Ziya":1,"Buhle":1})
+
+    assert.equal(2, greet.count());
+    var greet = Greet ({"Ziya":1})
+    assert.equal(1, greet.count());
+
+  });
+});
 });
