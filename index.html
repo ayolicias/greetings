@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet"href="css/greet.css">
+</head>
+
+<body>
+
+  <div class="container">
+  <h1>Greetings</h1>
+
+    <div class="row"id ="input">
+      <div class="four columns">
+      <b>Name:</b> <input type="input" class="inputName">
+    </div>
+
+    </div>
+
+    <span class="count">0</span>
+
+  <br>
+    <div class="row"id="greetMeBtn">
+    <div class="three columns">
+    <input type="button" name="greetMe" value="Greet me" class="greetMeBtn">
+  </div>
+  <div class="one columns">
+    <input type="button" name= "Reset"value="Reset" class="Reset">
+  </div>
+  </div>
+  <div class="row"id ="language">
+  <div class="twelve columns">
+  English<input type="radio" name="language" class="language" value='English'>
+  Afrikaans<input type="radio" name="language" class="language" value='Afrikaans'>
+  Isixhosa<input type="radio" name="language" class="language" value='Isixhosa'>
+  </div>
+</div>
+  <div class="greeting"></div>
+  </div>
+</body>
+<script src="js/greet.js" charset="utf-8"></script>
+<script src="js/greet.dom.js" charset="utf-8"></script>
+
+
+</html>
