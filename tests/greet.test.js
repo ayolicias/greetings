@@ -42,9 +42,9 @@ describe('Greetings', function(){
 
   it("should return users stored in localStorage", function(){
     var greet = Greet({"Ziya":1,"Buhle":1})
-
     assert.equal(2, greet.count());
-    var greet = Greet ({"Ziya":1})
+
+    var greet = Greet ({"Ziya":2})
     assert.equal(1, greet.count());
 
   });
