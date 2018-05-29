@@ -8,19 +8,22 @@ body {
     margin: 0;
 
 }
-.input{
-  color:inherit;
+input{
+  font-weight: bold;
+  font-style: oblique;
 
 }
-.h1{
-  color: inherit;
-  font-style: oblique;
-  font-size: 20px;
+h1{
+  /* color: inherit; */
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+20px
 }
 
 .container {
     position: left;
-    background-color: #ffe6e6;
+    background-color: #D98880;
     left: 0;
     top: 50%;
     width: 100%;
@@ -46,6 +49,7 @@ body {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  font-weight: bold;
 }
 .greetMeBtn:hover {background-color: #3e8e41}
 
@@ -68,6 +72,8 @@ body {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  font-weight: bold;
+  font-style: oblique;
 }
 .Reset:hover {background-color: #3e8e41}
 
@@ -77,5 +83,6 @@ body {
   transform: translateY(4px);
 }
 .language{
-
+font-variant-ligatures:normal;
+font-style: oblique;
 }

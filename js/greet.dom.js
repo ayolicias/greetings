@@ -15,7 +15,7 @@ function greetDom(){
   var greetMeBtnElement = document.querySelector("input[name='language']:checked");
   if (greetMeBtnElement){
     var greetinglanguage = greetMeBtnElement.value;
-    var name = inputName.value.toLowerCase();
+    var name = inputName.value.toUpperCase();
 
     if (name === ''){
         greetingElement.innerHTML = "Enter Name";
